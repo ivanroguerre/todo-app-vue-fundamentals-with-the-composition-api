@@ -2,7 +2,7 @@
 import InputText from "primevue/inputtext";
 
 const preset = {
-  root: ({ props, context, parent }) => ({
+  root: ({ props, context }) => ({
     class: [
       // Size
       {
@@ -17,7 +17,6 @@ const preset = {
       {
         "hover:border-purple-800": !context.disabled && !props.invalid,
         "focus:ring-purple-400": !context.disabled,
-        "bg-zinc-900": context.disabled,
       },
     ],
   }),

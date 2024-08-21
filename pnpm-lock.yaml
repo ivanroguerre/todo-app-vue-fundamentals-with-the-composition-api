@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      primeicons:
+        specifier: ^7.0.0
+        version: 7.0.0
       primevue:
         specifier: ^4.0.4
         version: 4.0.4(vue@3.4.37)
@@ -695,6 +698,9 @@ packages:
   postcss@8.4.41:
     resolution: {integrity: sha512-TesUflQ0WKZqAvg52PWL6kHgLKP6xB6heTOdoYM0Wt2UHyxNa4K25EZZMgKns3BH1RLVbZCREPpLY0rhnNoHVQ==, tarball: https://registry.npmjs.org/postcss/-/postcss-8.4.41.tgz}
     engines: {node: ^10 || ^12 || >=14}
+
+  primeicons@7.0.0:
+    resolution: {integrity: sha512-jK3Et9UzwzTsd6tzl2RmwrVY/b8raJ3QZLzoDACj+oTJ0oX7L9Hy+XnVwgo4QVKlKpnP/Ur13SXV/pVh4LzaDw==, tarball: https://registry.npmjs.org/primeicons/-/primeicons-7.0.0.tgz}
 
   primevue@4.0.4:
     resolution: {integrity: sha512-1moEddbczJ1+yEyfeYQk3xOQB64iCjjM//f+HSXs6YrKVVC0QjPFx9XPNXrr2JjHlp+6D7EpPZtsmcrfA9jWkA==, tarball: https://registry.npmjs.org/primevue/-/primevue-4.0.4.tgz}
@@ -1418,6 +1424,8 @@ snapshots:
       nanoid: 3.3.7
       picocolors: 1.0.1
       source-map-js: 1.2.0
+
+  primeicons@7.0.0: {}
 
   primevue@4.0.4(vue@3.4.37):
     dependencies:

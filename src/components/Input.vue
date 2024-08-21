@@ -9,13 +9,13 @@ const preset = {
         "py-2.5 !px-2": props.size == null,
       },
       // Colors
-      "text-neutral-300",
-      "placeholder:text-neutral-500",
+      "!text-neutral-300",
+      "placeholder:!text-neutral-500",
       { "bg-zinc-950 ": !context.disabled },
-      { "border-purple-950": !props.invalid },
+      { "!border-purple-950": !props.invalid },
       // States
       {
-        "hover:border-purple-800": !context.disabled && !props.invalid,
+        "hover:!border-purple-800": !context.disabled && !props.invalid,
         "focus:ring-purple-400": !context.disabled,
       },
     ],

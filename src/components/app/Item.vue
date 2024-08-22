@@ -2,18 +2,19 @@
 import Button from "../primevue/Button.vue";
 import Card from "../primevue/Card.vue";
 
-const { text, done } = defineProps({
-  text: String,
-  done: Boolean,
+const { todo, markTodoFn, deleteTodoFn } = defineProps({
+  todo: Object,
+  markTodoFn: Function,
+  deleteTodoFn: Function,
 });
 
 const textClass = {
-  "line-through": done,
-  "text-emerald-300": done,
+  "line-through": todo.done,
+  "text-emerald-300": todo.done,
 };
 const buttonsClass = {
   flex: true,
-  hidden: done,
+  hidden: todo.done,
 };
 </script>
 <template>
@@ -21,11 +22,11 @@ const buttonsClass = {
     <template #title>
       <div class="flex justify-between items-start gap-4">
         <div :class="textClass">
-          {{ text }}
+          {{ todo.text }}
         </div>
         <div :class="buttonsClass">
-          <Button icon="pi pi-check" text />
-          <Button icon="pi pi-trash" text />
+          <Button @click="markTodoFn(todo.id)" icon="pi pi-check" text />
+          <Button @click="deleteTodoFn(todo.id)" icon="pi pi-trash" text />
         </div>
       </div>
     </template>

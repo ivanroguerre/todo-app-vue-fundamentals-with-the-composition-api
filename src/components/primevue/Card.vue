@@ -8,6 +8,9 @@ const preset = {
   body: {
     class: ["!p-5", "!gap-0"],
   },
+  title: {
+    class: "!font-light",
+  },
 };
 
 const ptOptions = {

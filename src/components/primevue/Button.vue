@@ -30,6 +30,11 @@ const preset = {
           !props.outlined &&
           !props.plain,
       },
+      // Primary Text Button
+      {
+        "text-violet-400":
+          props.text && props.severity === null && !props.plain,
+      },
       // --- Severity Button States ---
       // Primary
       {
@@ -41,6 +46,13 @@ const preset = {
           !props.plain,
       },
       { "focus:ring-purple-400": props.severity === null },
+      // Text & Outlined Button
+      {
+        "hover:!bg-transparent hover:!text-purple-800":
+          (props.text || props.outlined) &&
+          props.severity === null &&
+          !props.plain,
+      },
     ],
   }),
 };

@@ -9,7 +9,7 @@ const preset = {
     class: ["!p-5", "!gap-0"],
   },
   title: {
-    class: "!font-light",
+    class: "!font-light !text-base",
   },
 };
 
